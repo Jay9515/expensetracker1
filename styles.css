@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+  
+    font-family: "Poppins", sans-serif;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #5f5d5d;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bebbbb;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c7c4c4;
+    border-radius: 5px;
+  }
+  body {
+    background-color: #0e0d0d;
+  }
+  .heading {
+    max-width: 80%;
+    margin: 10px auto;
+    background-color: #181818;
+    color: rgb(197, 193, 193);
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 16px 0px rgba(255, 68, 0, 0.348);
+  }
+  .container {
+    width: 60%;
+    padding: 4px;
+    margin: 2px auto;
+    border-radius: 8px;
+    background-color: #000000bc;
+  }
+  .box {
+    /* border: 1px solid black; */
+    padding: 5px;
+    /* border: 1px solid red; */
+    width: 20rem;
+    /* border: 1px solid green; */
+  }
+  .expense_form {
+    width: 100%;
+    /* border: 1px solid rgb(232, 9, 9); */
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: rgb(197, 193, 193);
+  
+    padding: 10px;
+    /* margin: 15px auto; */
+  }
+  .form_control {
+    margin-bottom: 10px;
+  }
+  .form_control label,
+  .form_control input,
+  .form_control select option {
+    display: block;
+  }
+  .form_control input,
+  .form_control select {
+    background-color: #2f2d2f;
+    border: none;
+    outline: none;
+    color: rgb(159, 157, 157);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    /* margin: 10px; */
+  }
+  .form_control select option {
+    background-color: rgb(87, 84, 84);
+    color: rgb(205, 197, 197);
+  }
+  .form_action {
+    /* border: 1px solid black; */
+    max-width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .form_action button {
+    width: 40%;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: rgb(223, 220, 220);
+    padding: 5px 0px;
+    border-radius: 5px;
+  }
+  
+  .expenseList ul li {
+    width: 90%;
+    margin: 6px auto;
+    box-shadow: 0px 5px 6px rgba(255, 68, 0, 0.389);
+    /* border: 1px solid black; */
+    padding: 1px;
+    display: flex;
+    border-radius: 8px;
+    color: white;
+    background-color: #26ac7f;
+    /* margin: 3px ; */
+  
+    /* align-items: center; */
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    /* margin: 6px; */
+  }
+  .expense_item .left {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 0px 3px;
+  }
+  .title_price {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+  .expense_item .left h3 {
+    margin: 1px;
+  }
+  .expense_item .left p {
+    margin: 0px;
+  }
+  .expense_item .right button {
+    background-color: rgb(36, 35, 35);
+    color: rgb(215, 209, 209);
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px;
+    border: none;
+    font-weight: bold;
+  
+    border-radius: 50px;
+  
+    /* border: 1px solid blue; */
+  }
+  .expenseList {
+    /* margin: 5px auto; */
+    padding: 5px;
+    background-color: rgb(37, 37, 37);
+    /* border: 1px solid black; */
+    width: 30rem;
+    border-radius: 8px;
+  }
+  .expenseList ul {
+    overflow-y: scroll;
+    height: 20rem;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    max-width: 100%;
+    margin: 5px auto;
+    /* padding:10px; */
+    /* border: 1px solid rgb(34, 34, 35);*/
+  }
+  .wrapper {
+    width: 100%;
+  
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2px auto;
+  }
+  .sort_buttons {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 40px;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  
+  .sort_button_cat,
+  #sort_button {
+    background-color: white;
+  
+    padding: 4px 10px;
+    border-radius: 8px;
+    background-color: rgb(222, 216, 216);
+    color: rgb(20, 20, 20);
+    border: none;
+    font-weight: bold;
+    margin: 6px 10px;
+  }
+  .total_amount {
+    background-color: white;
+    /* margin: 10px auto; */
+    max-width: 100px;
+    padding: 4px 10px;
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: rgb(88, 85, 85);
+    color: white;
+  
+    text-align: center;
+  }
+  
